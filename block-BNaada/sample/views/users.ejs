@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome To The Users Collaction</h1>
+    </header>
+    <main>
+      <div>
+        <h2>List Of All Users</h2>
+        <%users.forEach(user=>{%>
+        <section>
+          <div>
+            <h3><%=user.name%></h3>
+            <h4><%=user.age%></h4>
+            <h5><%=user.collage%></h5>
+            <a href="/users/<%=user._id%>"><button>Show</button></a>
+          </div>
+        </section>
+        <% })%>
+      </div>
+    </main>
+  </body>
+</html>
