@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to User ditails</h1>
+    <div>
+        <h2><%=user.name%></h2>
+        <h2><%=user.email%></h2>
+         <h2><%=user.age%></h2>
+        <h2><%=user.address%></h2>
+        <h2><%=user.bio%></h2>
+        <h2><%=user.hobbies%></h2>
+        <a href="/users/<%=user.id%>/edit"><button>Edit</button></a>
+        <a href="/users/<%=user.id%>/delete"><button>Delete</button></a>
+        <a href="/users"><button>All Users</button></a>
+    </div>
+</body>
+</html>
